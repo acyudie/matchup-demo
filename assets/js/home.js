@@ -54,8 +54,8 @@
     open();
   }
 
-  function open() { box.hidden = false; input.setAttribute('aria-expanded', 'true'); }
-  function close() { box.hidden = true; input.setAttribute('aria-expanded', 'false'); active = -1; }
+  function open() { box.hidden = false; form.classList.add('is-open'); input.setAttribute('aria-expanded', 'true'); }
+  function close() { box.hidden = true; form.classList.remove('is-open'); input.setAttribute('aria-expanded', 'false'); active = -1; }
 
   function setActive(i) {
     var btns = MU.qsa('button', box);

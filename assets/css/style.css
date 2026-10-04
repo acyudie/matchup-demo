@@ -143,7 +143,7 @@ legend { padding: 0; }
 .avatar { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none; background: var(--line-2); }
 .avatar-sm { width: 36px; height: 36px; }
 .avatar-lg { width: 64px; height: 64px; }
-.avatar-stack { display: flex; padding-left: 8px; }
+.avatar-stack { display: flex; flex: none; padding-left: 8px; }
 .avatar-stack img { width: 34px; height: 34px; border-radius: 50%; border: 2px solid #fff; margin-left: -8px; object-fit: cover; background: var(--line-2); }
 .rating { display: inline-flex; align-items: center; gap: 3px; font-weight: 700; color: var(--ink); }
 .rating .ico { width: 15px; height: 15px; }
@@ -218,7 +218,7 @@ legend { padding: 0; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: center; }
 @media (min-width: 1024px) {
   .hero { padding: 56px 0 80px; }
-  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr); gap: 32px; }
+  .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .95fr); gap: 32px; }
 }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px 6px 8px;
@@ -275,6 +275,7 @@ legend { padding: 0; }
 .hot-keywords > span { font-size: 13px; color: var(--ink-3); font-weight: 700; white-space: nowrap; flex: none; }
 .kw { flex: none; height: 34px; padding: 0 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: var(--ink-2); white-space: nowrap; transition: border-color .15s, color .15s; }
 .kw:hover { border-color: var(--brand-200); color: var(--brand); }
+.search.is-open + .hot-keywords { visibility: hidden; }
 @media (min-width: 768px) {
   .hot-keywords { flex-wrap: wrap; overflow: visible; margin-left: 0; margin-right: 0; padding: 0; }
 }
@@ -446,6 +447,7 @@ legend { padding: 0; }
 /* ---------- Toast ---------- */
 .toast-wrap { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 400; display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none; width: max-content; max-width: calc(100% - 32px); }
 .toast { display: flex; gap: 8px; align-items: center; background: rgba(25, 31, 40, .95); color: #fff; padding: 12px 16px; border-radius: 14px; font-size: 14px; font-weight: 600; box-shadow: var(--sh-3); animation: toastIn .28s var(--ease); line-height: 1.4; }
+@media (max-width: 767px) { .page-request .toast-wrap { bottom: calc(92px + env(safe-area-inset-bottom)); } }
 .toast .ico { width: 18px; height: 18px; color: #7ee2b8; }
 .toast.is-info .ico { color: #aab8ff; }
 .toast.is-warn .ico { color: #ff9aa4; }
