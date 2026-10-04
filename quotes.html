@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3e5bff">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>받은 견적 — 매치업 대전 (시연용 데모)</title>
+<meta name="description" content="요청서에 도착한 전문가 견적을 가격·평점·응답 속도로 비교하고 채팅으로 상담하세요. (시연용 가상 서비스)">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="logo" viewBox="0 0 32 32"><defs><clipPath id="logo-clip"><circle cx="12.6" cy="16" r="6.6"/></clipPath></defs><rect width="32" height="32" rx="9.5" fill="#3e5bff"/><circle cx="19.4" cy="16" r="6.6" fill="#ff7a3d"/><circle cx="12.6" cy="16" r="6.6" fill="#fff"/><circle cx="19.4" cy="16" r="6.6" fill="#ffd2bc" clip-path="url(#logo-clip)"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol><symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></symbol><symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol><symbol id="i-circle-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="8" y2="12" /><line x1="12" x2="12.01" y1="16" y2="16" /></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></symbol><symbol id="i-circle-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></symbol><symbol id="i-clipboard-list" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></symbol><symbol id="i-code-xml" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol><symbol id="i-funnel" viewBox="0 0 24 24"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" /></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></symbol><symbol id="i-inbox" viewBox="0 0 24 24"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12" /><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" /></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4" /><path d="M12 8h.01" /></symbol><symbol id="i-lock-keyhole" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1" /><rect x="3" y="10" width="18" height="12" rx="2" /><path d="M7 10V7a5 5 0 0 1 10 0v3" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></symbol><symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol><symbol id="i-messages-square" viewBox="0 0 24 24"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></symbol><symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></symbol><symbol id="i-paint-roller" viewBox="0 0 24 24"><rect width="16" height="6" x="2" y="2" rx="2" /><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" /><rect width="4" height="6" x="8" y="16" rx="1" /></symbol><symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" /><circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /></symbol><symbol id="i-receipt" viewBox="0 0 24 24"><path d="M12 17V7" /><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /></symbol><symbol id="i-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></symbol><symbol id="i-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></symbol><symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol><symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3" /><path d="M12 19H3" /><path d="M14 3v4" /><path d="M16 17v4" /><path d="M21 12h-9" /><path d="M21 19h-5" /><path d="M21 5h-7" /><path d="M8 10v4" /><path d="M8 12H3" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></symbol><symbol id="i-spray-can" viewBox="0 0 24 24"><path d="M3 3h.01" /><path d="M7 5h.01" /><path d="M11 7h.01" /><path d="M3 7h.01" /><path d="M7 9h.01" /><path d="M3 11h.01" /><rect width="4" height="4" x="15" y="5" /><path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2" /><path d="m13 14 8-2" /><path d="m13 19 8-2" /></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol><symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><path d="M15 18H9" /><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /><circle cx="17" cy="18" r="2" /><circle cx="7" cy="18" r="2" /></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></symbol></svg>
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="매치업 대전 홈">
+      <svg class="logo-mark" aria-hidden="true"><use href="#logo"></use></svg>
+      <span>매치업</span><span class="logo-region">대전</span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html#categories">서비스 찾기</a>
+      <a href="request.html">견적 요청</a>
+      <a href="quotes.html" aria-current="page">받은 견적<span class="nav-count">5</span></a>
+      <a href="#" data-demo="전문가 등록은 시연용 데모에서 지원하지 않아요">전문가 등록</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost btn-sm btn-login" type="button" data-demo="로그인은 시연용 데모에서 지원하지 않아요">로그인</button>
+      <a class="btn btn-primary btn-sm" href="request.html">무료 견적 요청</a>
+      <button class="icon-btn menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"></use></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav aria-label="모바일 메뉴">
+    <a href="index.html#categories">서비스 찾기 <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+    <a href="request.html">견적 요청 <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+    <a href="quotes.html"><span>받은 견적<span class="nav-count">5</span></span> <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+    <a href="#" data-demo="전문가 등록은 시연용 데모에서 지원하지 않아요">전문가 등록 <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+    <a href="#" data-demo="로그인은 시연용 데모에서 지원하지 않아요">로그인 <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+  </nav>
+  <a class="btn btn-primary btn-lg btn-block" href="request.html">무료 견적 요청하기</a>
+</div>
+<main id="main" class="page-wrap">
+  <div class="container">
+    <header class="page-head">
+      <p class="eyebrow"><svg class="ico ico-sm" aria-hidden="true"><use href="#i-inbox"></use></svg>받은 견적</p>
+      <h1 class="page-title" id="q-title">견적 5개가 도착했어요</h1>
+      <p class="page-desc">가격·리뷰·응답 속도를 비교하고, 채팅으로 궁금한 점을 물어보세요.</p>
+      <div class="sample-banner" id="sample-banner" hidden><svg class="ico" aria-hidden="true"><use href="#i-info"></use></svg><span>샘플 요청서 기준으로 보여드리는 견적이에요.</span><a href="request.html">내 요청서 작성하기</a></div>
+    </header>
+
+    <div class="quotes-layout">
+      <aside class="req-card" id="req-card" aria-label="내 요청서"></aside>
+
+      <section aria-labelledby="list-title">
+        <div class="list-head">
+          <h2 class="list-title" id="list-title">받은 견적 <em id="count">5</em></h2>
+        </div>
+        <div class="toolbar">
+          <div class="filter-chips" role="group" aria-label="견적 필터">
+            <button class="fchip" type="button" aria-pressed="true" data-filter="all">전체</button>
+            <button class="fchip" type="button" aria-pressed="false" data-filter="verified"><svg class="ico" aria-hidden="true"><use href="#i-badge-check"></use></svg>인증 전문가</button>
+            <button class="fchip" type="button" aria-pressed="false" data-filter="top"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg>평점 4.8 이상</button>
+            <button class="fchip" type="button" aria-pressed="false" data-filter="fast"><svg class="ico" aria-hidden="true"><use href="#i-zap"></use></svg>30분 내 응답</button>
+            <button class="fchip" type="button" aria-pressed="false" data-filter="noextra"><svg class="ico" aria-hidden="true"><use href="#i-receipt"></use></svg>추가 비용 없음</button>
+          </div>
+          <div class="sort">
+            <span class="result-count" id="result-count"></span>
+            <label class="sr-only" for="sort">정렬 기준</label>
+            <select class="select" id="sort">
+              <option value="rec">추천순</option>
+              <option value="price">낮은 가격순</option>
+              <option value="rating">평점 높은순</option>
+              <option value="reviews">리뷰 많은순</option>
+              <option value="resp">응답 빠른순</option>
+            </select>
+          </div>
+        </div>
+        <div class="quote-list" id="quote-list"></div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="매치업 대전 홈">
+          <svg class="logo-mark" aria-hidden="true"><use href="#logo"></use></svg>
+          <span>매치업</span><span class="logo-region">대전</span>
+        </a>
+        <p>우리 동네 전문가 매칭 플랫폼. 요청서 하나로 대전 지역 전문가의 견적을 비교하고, 채팅으로 상담한 뒤 고용하세요.</p>
+        <p class="demo-note"><svg class="ico" aria-hidden="true"><use href="#i-info"></use></svg>※ 시연용 데모 (가상 서비스)</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>서비스</h4>
+          <a href="request.html?cat=clean">청소</a>
+          <a href="request.html?cat=move">이사</a>
+          <a href="request.html?cat=interior">인테리어</a>
+          <a href="request.html?cat=lesson">레슨</a>
+          <a href="request.html?cat=dev">개발</a>
+        </div>
+        <div class="footer-col">
+          <h4>매치업</h4>
+          <button type="button" data-demo>회사 소개</button>
+          <button type="button" data-demo>공지사항</button>
+          <button type="button" data-demo>이용약관</button>
+          <button type="button" data-demo>개인정보처리방침</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 매치업 대전 (가상 브랜드) · 포트폴리오 시연용으로 제작되었습니다.</span>
+      <span>등장하는 업체·인물·후기·수치는 모두 가상입니다.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-name" aria-hidden="true" tabindex="-1">
+  <div class="drawer-handle" aria-hidden="true"></div>
+  <div class="drawer-head">
+    <img class="avatar" id="d-avatar" src="assets/img/pro-01.webp" alt="" width="44" height="44">
+    <div class="drawer-id">
+      <b id="drawer-name">전문가</b>
+      <span id="d-sub"></span>
+    </div>
+    <button class="btn btn-primary btn-sm" type="button" id="d-hire">고용하기</button>
+    <button class="icon-btn" type="button" id="d-close" aria-label="닫기"><svg class="ico" aria-hidden="true"><use href="#i-x"></use></svg></button>
+  </div>
+  <div class="drawer-body" id="d-body"></div>
+  <div class="drawer-foot">
+    <div class="quick" id="d-quick" aria-label="빠른 질문"></div>
+    <form class="composer" id="d-form" autocomplete="off">
+      <label class="sr-only" for="d-input">메시지 입력</label>
+      <input id="d-input" type="text" placeholder="메시지를 입력하세요" maxlength="200" enterkeyhint="send">
+      <button class="send-btn" type="submit" aria-label="메시지 보내기"><svg class="ico" aria-hidden="true"><use href="#i-send"></use></svg></button>
+    </form>
+  </div>
+</aside>
+<div class="modal" id="modal" role="alertdialog" aria-modal="true" aria-labelledby="modal-title" hidden></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/quotes.js"></script>
+</body>
+</html>
