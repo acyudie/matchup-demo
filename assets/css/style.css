@@ -78,7 +78,7 @@ legend { padding: 0; }
 :focus-visible { outline: 3px solid rgba(62, 91, 255, .45); outline-offset: 2px; }
 ::selection { background: var(--brand-100); }
 
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; white-space: nowrap !important; border: 0 !important; float: none !important; }
 .skip-link { position: absolute; left: 12px; top: -48px; z-index: 300; background: var(--ink); color: #fff; padding: 10px 14px; border-radius: var(--r-sm); font-weight: 700; transition: top .2s; }
 .skip-link:focus { top: 12px; }
 
